@@ -9,11 +9,11 @@ export class Donor {
   @Column()
   name: string;
   @OneToOne(() => BloodType, bloodType => bloodType.id)
-  bloodType: BloodType;
+  bloodType?: BloodType;
   @OneToOne(() => City, city => city.id)
-  city: City;
+  city?: City;
   @Column()
-  counter: number;
+  counter?: number;
   @Column()
   login: string;
   @Column()

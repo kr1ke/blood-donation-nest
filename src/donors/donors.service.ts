@@ -5,6 +5,7 @@ import { UpdateDonorDto } from './dto/update-donor.dto';
 @Injectable()
 export class DonorsService {
   create(createDonorDto: CreateDonorDto) {
+    console.log(createDonorDto, '222')
     return 'This action adds a new donor';
   }
 

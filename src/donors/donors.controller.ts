@@ -7,8 +7,9 @@ import { UpdateDonorDto } from './dto/update-donor.dto';
 export class DonorsController {
   constructor(private readonly donorsService: DonorsService) {}
 
-  @Post()
+  @Post('register')
   create(@Body() createDonorDto: CreateDonorDto) {
+    console.log(createDonorDto, '111')
     return this.donorsService.create(createDonorDto);
   }
 
