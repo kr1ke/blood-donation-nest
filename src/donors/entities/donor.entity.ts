@@ -12,7 +12,7 @@ export class Donor {
   bloodType?: BloodType;
   @OneToOne(() => City, city => city.id)
   city?: City;
-  @Column()
+  @Column({nullable: true})
   counter?: number;
   @Column()
   login: string;
