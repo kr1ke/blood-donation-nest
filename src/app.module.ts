@@ -15,6 +15,7 @@ import { DonatesModule } from "./donates/donates.module";
 import { DocumentsModule } from "./documents/documents.module";
 import { Donate } from "./donates/entities/donate.entity";
 import { Document } from "./documents/entities/document.entity";
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { Document } from "./documents/entities/document.entity";
     DonorsModule,
     DonatesModule,
     DocumentsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

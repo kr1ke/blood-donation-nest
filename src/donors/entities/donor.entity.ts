@@ -14,7 +14,7 @@ export class Donor {
   city?: City;
   @Column({nullable: true})
   counter?: number;
-  @Column()
+  @Column({ unique: true })
   login: string;
   @Column()
   password: string;

@@ -9,8 +9,7 @@ export class DonorsController {
 
   @Post('register')
   create(@Body() createDonorDto: CreateDonorDto) {
-    console.log(createDonorDto, '111')
-    return this.donorsService.create(createDonorDto);
+    return this.donorsService.registration(createDonorDto);
   }
 
   @Get()
